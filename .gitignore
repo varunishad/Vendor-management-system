@@ -1,0 +1,5 @@
+*.pyc
+vendor_management/__pycache__/
+vendor/__pycache__/
+vendor/migrations/__pycache__/
+*.sqlite3
