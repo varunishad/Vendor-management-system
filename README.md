@@ -30,7 +30,8 @@ The Vendor Management System allows you to perform the following actions:
 ### Vendor Profile Management
 
 1. **Create Vendor:**
-   - Endpoint: `POST http://127.0.0.1:8000/api/vendors/`
+   - Method: `POST`
+   - URL: `http://127.0.0.1:8000/api/vendors/`
    - Request Sample:
 
      ```json
@@ -43,13 +44,16 @@ The Vendor Management System allows you to perform the following actions:
      ```
 
 2. **List All Vendors:**
-   - Endpoint: `GET http://localhost:8000/api/vendors/`
+   - Method: `GET`
+   - URL: `http://localhost:8000/api/vendors/`
 
 3. **List Specific Vendor:**
-   - Endpoint: `GET http://localhost:8000/api/vendors/{vendor_id}/`
+   - Method: `GET`
+   - URL: `http://localhost:8000/api/vendors/{vendor_id}/`
 
 4. **Update Vendor Details:**
-   - Endpoint: `PUT http://localhost:8000/api/vendors/{vendor_id}/`
+   - Method: `PUT`
+   - URL: `http://localhost:8000/api/vendors/{vendor_id}/`
    - Request Sample:
 
      ```json
@@ -62,15 +66,18 @@ The Vendor Management System allows you to perform the following actions:
      ```
 
 5. **Delete Vendor:**
-   - Endpoint: `DELETE http://localhost:8000/api/vendors/{vendor_id}/`
+   - Method: `DELETE`
+   - URL: `http://localhost:8000/api/vendors/{vendor_id}/`
 
 6. **Vendor Performance Metrics:**
-   - Endpoint: `GET http://localhost:8000/api/vendors/{vendor_id}/performance/`
+   - Method: `GET`
+   - URL: `http://localhost:8000/api/vendors/{vendor_id}/performance/`
 
 ### Purchase Order Tracking
 
 1. **Create an Order:**
-   - Endpoint: `POST http://localhost:8000/api/vendors/{vendor_id}/performance/`
+   - Method: `POST`
+   - URL: `http://localhost:8000/api/vendors/{vendor_id}/performance/`
    - Request Sample:
 
      ```json
@@ -89,18 +96,22 @@ The Vendor Management System allows you to perform the following actions:
      ```
 
 2. **List All Orders:**
-   - Endpoint: `GET http://localhost:8000/api/purchase_orders/`
+   - Method: `GET`
+   - URL: `http://localhost:8000/api/purchase_orders/`
    - List All Orders from a Specific Vendor:
-     - Endpoint: `GET http://localhost:8000/api/purchase_orders/?vendor_id={vendor_id}`
+     - URL: `http://localhost:8000/api/purchase_orders/?vendor_id={vendor_id}`
 
 3. **List Specific Order:**
-   - Endpoint: `GET http://localhost:8000/api/purchase_orders/{po_id}/`
+   - Method: `GET`
+   - URL: `http://localhost:8000/api/purchase_orders/{po_id}/`
 
 4. **Acknowledge Purchase Order:**
-   - Endpoint: `PUT http://localhost:8000/api/purchase_orders/{po_id}/acknowledge/`
+   - Method: `PUT`
+   - URL: `http://localhost:8000/api/purchase_orders/{po_id}/acknowledge/`
 
 5. **Update Order:**
-   - Endpoint: `PUT http://localhost:8000/api/purchase_orders/{po_id}/`
+   - Method: `PUT`
+   - URL: `http://localhost:8000/api/purchase_orders/{po_id}/`
    - Request Sample:
 
      ```json
@@ -121,4 +132,5 @@ The Vendor Management System allows you to perform the following actions:
      ```
 
 6. **Delete an Order:**
-   - Endpoint: `DELETE http://localhost:8000/api/purchase_orders/{po_id}/`
+   - Method: `DELETE`
+   - URL: `http://localhost:8000/api/purchase_orders/{po_id}/`
