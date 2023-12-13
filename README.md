@@ -15,6 +15,14 @@ The Vendor Management System allows you to perform the following actions:
 - Python 3.9.9
 - Django 3.2
 - Django Rest Framework 3.13.1
+- pytz 2022.7.1
+
+
+## Steps to setup
+1. Clone this repository
+2. Install the requiremnets
+3. Apply migrations
+4. Run the development server
 
 ## API Documentation
 
