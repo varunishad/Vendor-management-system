@@ -19,6 +19,7 @@ The Vendor Management System allows you to perform the following actions:
 
 
 ## Steps to setup
+
 1. Clone this repository
 2. Install the requiremnets
 3. Apply migrations
