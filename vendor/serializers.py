@@ -45,9 +45,8 @@ class VendorPerformanceSerializer(serializers.ModelSerializer):
     average_response_time = serializers.SerializerMethodField()
 
     def get_average_response_time(self, vendor_obj):
-        average_response_time = vendor_obj.average_response_time
 
-        if average_response_time:
+        if average_response_time := vendor_obj.average_response_time:
             # Convert timedelta to a human readable format
             days, seconds = average_response_time.days, average_response_time.seconds
             hours, remainder = divmod(seconds, 3600)
